@@ -1,4 +1,4 @@
-interface NetworkInformation {
+export interface NetworkInformation {
   /**
    * Returns the effective bandwidth estimate in megabits per second, rounded to the nearest multiple of 25 kilobits per seconds
    */
@@ -39,6 +39,6 @@ interface NetworkInformation {
     | 'unknown';
 }
 
-interface NetworkChangeEvent extends EventTarget {
+export interface NetworkChangeEvent extends EventTarget {
   target: NetworkInformation;
 }

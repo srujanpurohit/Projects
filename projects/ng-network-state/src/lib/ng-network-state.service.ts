@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import {
+  NetworkInformation,
+  NetworkChangeEvent,
+} from './ng-network-state.model';
 
 @Injectable({
   providedIn: 'root',

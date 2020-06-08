@@ -4,3 +4,4 @@
 
 export * from './lib/ng-network-state.service';
 export * from './lib/ng-network-state.module';
+export * from './lib/ng-network-state.model';

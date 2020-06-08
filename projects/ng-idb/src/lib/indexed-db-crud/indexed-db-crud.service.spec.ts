@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { IndexDbCRUDService } from './indexed-db-crud.service';
+import { IndexedDbCRUDService } from './indexed-db-crud.service';
 
 describe('IndexDbCRUDService', () => {
-  let service: IndexDbCRUDService;
+  let service: IndexedDbCRUDService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(IndexDbCRUDService);
+    service = TestBed.inject(IndexedDbCRUDService);
   });
 
   it('should be created', () => {

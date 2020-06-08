@@ -42,6 +42,46 @@
           }
         }
       }
+    },
+    "ngNetworkState": {
+      "projectType": "library",
+      "root": "projects/ng-network-state",
+      "sourceRoot": "projects/ng-network-state/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-network-state/tsconfig.lib.json",
+            "project": "projects/ng-network-state/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-network-state/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-network-state/src/test.ts",
+            "tsConfig": "projects/ng-network-state/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-network-state/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-network-state/tsconfig.lib.json",
+              "projects/ng-network-state/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "ngIDB"
 }

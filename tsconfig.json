@@ -19,6 +19,10 @@
       "ng-idb": [
         "dist/ng-idb/ng-idb",
         "dist/ng-idb"
+      ],
+      "ng-network-state": [
+        "dist/ng-network-state/ng-network-state",
+        "dist/ng-network-state"
       ]
     }
   },

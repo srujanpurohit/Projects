@@ -2,7 +2,7 @@ import { Observable, Observer, forkJoin, throwError } from 'rxjs';
 import { IDBQuery } from '../ng-idb.model';
 import { mergeMap } from 'rxjs/operators';
 
-export class IndexDbCRUDService {
+export class IndexedDbCRUDService {
   constructor() {}
 
   read(

@@ -1,6 +1,6 @@
 import { Injectable, Inject } from '@angular/core';
 import { Observable, BehaviorSubject, Observer, throwError } from 'rxjs';
-import { IndexDbCRUDService } from './indexed-db-crud/indexed-db-crud.service';
+import { IndexedDbCRUDService } from './indexed-db-crud/indexed-db-crud.service';
 import {
   ObjectStoreCreationOption,
   configToken,
@@ -21,7 +21,7 @@ export class NgIDBService {
   );
 
   constructor(
-    private crudService: IndexDbCRUDService,
+    private crudService: IndexedDbCRUDService,
     @Inject(configToken) private _dbCreationOptions: DBCreationOptions
   ) {
     this.init();
